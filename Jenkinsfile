@@ -11,6 +11,9 @@ uptime
     }
 
     stage('Test') {
+      environment {
+        city = 'Gurugram'
+      }
       steps {
         sleep 3
         echo 'Testing completed '
@@ -24,8 +27,5 @@ uptime
       }
     }
 
-  }
-  environment {
-    city = 'Gurugram'
   }
 }
